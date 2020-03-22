@@ -1,6 +1,27 @@
 #!/bin/bash
 
 
+echo $0
+echo $1
+echo $2
+echo $3
+echo $#
+echo $*
+
+
+for i in $*; do
+	if [ "$i" == "-U" ]; then
+		echo update
+		wget https://raw.githubusercontent.com/SzaryMarian/link2yt/master/yt.sh
+		exit 0
+	fi
+done
+
+
+sleep 1s
+
+exit
+
 for f in *.url; do
 
 	echo " file  : $f"
