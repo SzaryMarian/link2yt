@@ -12,6 +12,7 @@ echo $*
 for i in $*; do
 	if [ "$i" == "-U" ]; then
 		echo update
+		mv yt.sh yt.sh.bak
 		wget https://raw.githubusercontent.com/SzaryMarian/link2yt/master/yt.sh
 		exit 0
 	fi
