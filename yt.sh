@@ -1,7 +1,7 @@
 #!/bin/bash
 
 yt=yt.sh
-ver=0002
+ver=0003
 
 
 function conv(){
